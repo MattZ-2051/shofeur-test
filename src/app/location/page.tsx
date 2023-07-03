@@ -1,7 +1,7 @@
 export default function Page() {
   return (
-    <main className="">
+    <div>
       <h1>Location page</h1>
-    </main>
+    </div>
   );
 }

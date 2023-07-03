@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
+        <main className="w-full px-20">{children}</main>
       </body>
     </html>
   );

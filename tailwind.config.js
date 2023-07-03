@@ -7,6 +7,9 @@ module.exports = {
     './node_modules/tw-elements/dist/js/**/*.js'
   ],
   theme: {
+    backgroundColor: {
+      'bg-overlay-color': 'rgba(2,2,2, 0.76)'
+    },
     extend: {}
   },
   darkMode: 'class',

@@ -14,5 +14,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function Page({ params }: { params: { slug: string } }) {
-  return <div>My Post: {params.slug}</div>;
+  return (
+    <div className="justify-start w-full">
+      <h1>Location {params.slug} </h1>
+    </div>
+  );
 }
