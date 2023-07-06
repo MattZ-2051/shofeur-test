@@ -2,7 +2,7 @@ import Button from '../Button';
 
 const Contact = () => {
   return (
-    <section className="mb-32 text-center">
+    <div className="text-center">
       <div className="mx-auto max-w-[700px] md:px-3">
         <h2 className="mb-12 text-3xl font-bold">Contact us</h2>
         <form>
@@ -43,7 +43,7 @@ const Contact = () => {
           <Button label="Send" />
         </form>
       </div>
-    </section>
+    </div>
   );
 };
 

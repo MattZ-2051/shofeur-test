@@ -1,5 +1,6 @@
 import Carousel from '@/components/Carousel';
 import Contact from '@/components/Contact';
+import Rentals from '@/components/Rentals';
 import { carouselMockData, vegasImgSrc } from '@/mockData';
 import { Metadata } from 'next';
 
@@ -19,13 +20,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function Page({ params }: { params: { slug: string } }) {
   return (
     <div className="justify-start w-full">
-      <h1 className="m-0 text-center">Location {params.slug} </h1>
+      <h1 className="m-0 text-center underline underline-offset-3">Las Vegas </h1>
       <div className="my-24">
         <h2 className="mb-6 text-3xl font-bold text-center">Popular Occasions</h2>
         <Carousel items={carouselMockData} />
       </div>
-      <div>
-        <div className="mb-24 text-center">
+      <div className="relative">
+        <div className="mb-24 text-center ">
           <div className="flex justify-center">
             <div className="max-w-[700px] text-center">
               <h2 className="mb-6 text-3xl font-bold text-center">How it works</h2>
@@ -108,7 +109,12 @@ export default function Page({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </div>
-      <Contact />
+      <div className="my-32">
+        <Rentals />
+      </div>
+      <div className="my-32">
+        <Contact />
+      </div>
     </div>
   );
 }
