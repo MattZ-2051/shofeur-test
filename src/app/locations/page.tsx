@@ -1,6 +1,6 @@
 import Card from '@/components/Card';
 import Pagination from '@/components/Pagination';
-import { locationsMockData, vegasImgSrc } from '@/mockData';
+import { locationsMockData } from '@/mockData';
 
 async function getData() {
   // const res = await fetch('https://api.example.com/...');
@@ -34,14 +34,16 @@ export default async function Page() {
               <Card
                 title={location.title}
                 description={location.description}
-                imgSrc={vegasImgSrc}
+                imgSrc={location.img}
                 href={`/locations/${location.name}`}
               />
             </div>
           );
         })}
       </div>
-      <div className="flex justify-center w-full mt-10">{data.length > 6 && <Pagination />}</div>
+      <div className="flex justify-center w-full mt-10">
+        {data.length > 6 && <Pagination data={data} />}
+      </div>
     </div>
   );
 }

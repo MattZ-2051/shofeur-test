@@ -8,7 +8,7 @@ const Header = () => {
     <div className="flex items-center justify-between w-full h-20 px-20 bg-bg-overlay-color">
       <Image src={imgSrc} alt="shofeur logo" height={60} width={200} />
       <div className="text-white">
-        <Link href={'/locations'}>Location</Link>
+        <Link href={'/locations'}>Locations</Link>
       </div>
     </div>
   );
