@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default function Page({ params }: { params: { slug: string } }) {
   return (
-    <div className="justify-start w-full">
+    <div className="w-full">
       <h1 className="m-0 text-center underline underline-offset-3">Las Vegas </h1>
       <div className="my-24">
         <h2 className="mb-6 text-3xl font-bold text-center">Popular Occasions</h2>

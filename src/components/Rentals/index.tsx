@@ -4,7 +4,7 @@ const Rentals = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <h2 className="mb-12 text-3xl font-bold text-center">Rentals Available</h2>
-      <div className="flex flex-wrap items-center justify-center w-[1000px] gap-12">
+      <div className="flex flex-col flex-wrap sm:!flex-row items-center justify-center w-[1000px] gap-12">
         <div>
           <p className="text-neutral-500 dark:text-neutral-300">Luxury SUV Up to 6 people</p>
           <Image
