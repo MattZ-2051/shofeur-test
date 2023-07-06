@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main className="w-full px-20">{children}</main>
+        <main className="w-full p-20 scroll-smooth">{children}</main>
       </body>
     </html>
   );
