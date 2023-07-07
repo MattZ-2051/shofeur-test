@@ -1,5 +1,6 @@
 import Card from '@/components/Card';
 import { locationsMockData } from '@/mockData';
+import { Metadata } from 'next';
 
 async function getData() {
   // const res = await fetch('https://api.example.com/...');
@@ -16,6 +17,15 @@ async function getData() {
 
   return res;
   // return res.json();
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Locations',
+    alternates: {
+      canonical: 'https://www.shofeur.com/locations'
+    }
+  };
 }
 
 export default async function Page() {

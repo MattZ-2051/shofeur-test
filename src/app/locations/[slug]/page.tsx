@@ -13,7 +13,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = params.slug;
 
   return {
-    title: slug
+    title: slug,
+    alternates: {
+      canonical: `https://www.shofeur.com/locations/${params.slug}`
+    }
   };
 }
 
