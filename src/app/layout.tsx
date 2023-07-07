@@ -1,5 +1,5 @@
 import Header from '@/components/Header';
-import './globals.css';
+import './index.css';
 import { Inter } from 'next/font/google';
 import 'tw-elements/dist/css/tw-elements.min.css';
 import { Metadata } from 'next';
