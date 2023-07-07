@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Github Link
+
+https://github.com/MattZ-2051/shofeur-test
 
 ## Getting Started
 
 First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
+```
+pnpm install
 pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+or visit
+https://shofeur-test.vercel.app/locations
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### App Description
 
-## Learn More
+#### Folder Structure
 
-To learn more about Next.js, take a look at the following resources:
+- [src/components](https://github.com/MattZ-2051/shofeur-test/tree/master/src/components) - Contains components used throughout the application, I like to use storybook to test these components
+- [src/api, hooks, store, types, utils](https://github.com/MattZ-2051/shofeur-test/tree/master/src) - Example of folder structure I would possibly use if the app were to be further developed
+- [src/app/\*](https://github.com/MattZ-2051/shofeur-test/tree/master/src/app) - Contains SEO Metadata files as explained in the [Next Docs](https://nextjs.org/docs/app/api-reference/file-conventions/metadata) as well as a opengraph metadata file added in the [slug] route
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Tech Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- NextJS
+- Typescript
+- TailwindCSS
+- Storybook for UI component testing (basic example in the button component)
+- Chromatic for CD to catch breaking UI changes (helps with regression and sharing component lib with team)
 
-## Deploy on Vercel
+### Summary
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-# shofeur-test
+https://shofeur-test.vercel.app/locations
+Is a basic locations example page that uses mockData, a further built out page can include pagination and additional filters. Clicking on the Las Vegas card will take you to /locations/[slug], in this case https://shofeur-test.vercel.app/locations/lasvegas. I added a basic page that shows some activities, rides available and a CTA to contact. Further development may contain descriptions and reviews from people who have used the service in the area.
