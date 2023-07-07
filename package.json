@@ -10,12 +10,14 @@
     "format": "prettier --write .",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006 -s ./public",
-    "build-storybook": "storybook build -s public"
+    "build-storybook": "storybook build -s public",
+    "chromatic": "npx chromatic --project-token=chpt_9a2a93fff6f8bed"
   },
   "dependencies": {
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
+    "chromatic": "^6.19.9",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.7",
     "next": "13.4.7",
@@ -45,5 +47,7 @@
   },
   "lint-staged": {
     "*.{js,css,md,ts,tsx}": "prettier --write"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "shofeur-application@0.1.0"
 }
